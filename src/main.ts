@@ -8,7 +8,7 @@ export function getIp() {
             if (ip.family === 'IPv4') {
                 IPv4 = ip.address;
             }
-        })
-    })
+        });
+    });
     return IPv4 || '127.0.0.1';
 }
