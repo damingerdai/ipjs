@@ -8,11 +8,13 @@
         "module": "commonjs",
         "moduleResolution": "node",
         "rootDir": ".",
+        "sourceRoot": "./src",
         "sourceMap": true,
         "inlineSources": true,
         "target": "es5",
         "skipLibCheck": true,
         "declaration": true,
+        "outDir": "./lib/src",   
         "lib": [
             "es2015",
             "dom"
@@ -22,6 +24,7 @@
         ]
     },
     "exclude": [
-        "node_modules"
+        "node_modules",
+        "**/*.spec.ts"
     ]
 }
