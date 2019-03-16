@@ -2,10 +2,12 @@
   "name": "ip",
   "version": "0.0.1",
   "description": "ip",
-  "main": "src/index.js",
+  "main": "./bundles/ip.js",
+  "module": "./es5/ip.js",
+  "typings": "ip.d.ts",
   "scripts": {
     "test": "jest",
-    "build": "rollup -c"
+    "build": "node build.js"
   },
   "keywords": [
     "ip"
@@ -17,19 +19,19 @@
     "babel-core": "^6.26.3",
     "babel-plugin-external-helpers": "^6.22.0",
     "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-es2015-rollup": "^3.0.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-stage-2": "^6.24.1",
     "babel-register": "^6.26.0",
+    "chalk": "^2.4.2",
     "jest": "^24.5.0",
     "rollup": "^1.6.0",
     "rollup-plugin-babel": "^4.3.2",
     "rollup-plugin-typescript": "^1.0.0",
+    "shelljs": "^0.8.3",
     "ts-jest": "^24.0.0",
     "tslib": "^1.9.3",
     "tslint": "^5.14.0",
-    "typescript": "^3.3.3333"
-  },
-  "dependencies": {
-    "babel-preset-es2015-rollup": "^3.0.0"
+    "typescript": "^3.3.3"
   }
 }
