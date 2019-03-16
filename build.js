@@ -28,4 +28,6 @@ if (shell.exec(`tsc`).code !== 0) {
     shell.exit(1);
 }
 
+shell.cp(`-Rf`, [`package.json`, `LICENSE`, `README.md`], `lib`);
+
 shell.echo(chalk.green(`End building`));
