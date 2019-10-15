@@ -9,7 +9,7 @@
 # 使用
 
 ```
-const { getIpv4, getIpv6 } = require('ipjs/lib');
+const { getIpv4, getIpv6 } = require('ipjs');
 
 console.log(getIpv4());
 console.log(getIpv6());
