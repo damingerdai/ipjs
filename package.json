@@ -1,6 +1,6 @@
 {
   "name": "ip",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "ip",
   "main": "./bundles/ip.js",
   "module": "./es5/ip.js",
