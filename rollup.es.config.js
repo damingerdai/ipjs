@@ -1,7 +1,7 @@
 import typescript from 'rollup-plugin-typescript';
 
 export default {
-    input: 'src/main.ts',
+    input: 'src/ip.ts',
     output: {
         file: 'lib/es5/ip.js',
         format: 'es',
