@@ -1,4 +1,4 @@
-import { getIp, getIpv4, getIpv6 } from '../src/main';
+import { getIp, getIpv4, getIpv6 } from '../src/ip';
 
 const ipv4 = /^((\d|[1-9]\d|1\d\d|2([0-4]\d|5[0-5]))\.){4}$/;
 const ipv6 = /^(([\da-fA-F]{1,4}):){8}$/;
