@@ -13,12 +13,12 @@ shell.echo(chalk.green(`Clean completed`));
 
 shell.echo(`Start bundling`);
 shell.echo(`Rollup package`);
-if (shell.exec(`rollup -c`).code !== 0) {
+if (shell.exec(`npx rollup -c`).code !== 0) {
     shell.echo(chalk.red(`Error: Rollup package failed`));
     shell.exit(1);
 }
 
-if (shell.exec(`rollup -c rollup.es.config.js`).code !== 0) {
+if (shell.exec(`npx rollup -c rollup.es.config.js`).code !== 0) {
     shell.echo(chalk.red(`Error: Rollup ES6 package failed`));
     shell.exit(1);
 }
