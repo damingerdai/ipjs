@@ -1,7 +1,9 @@
 {
   "name": "ip",
   "version": "0.0.2",
-  "description": "ip",
+  "description": "ipjs",
+  "homepage": "https://github.com/damingerdai/ipjs",
+  "bugs": "https://github.com/damingerdai/ipjs/issues",
   "main": "./bundles/ip.js",
   "module": "./es5/ip.js",
   "typings": "ip.d.ts",
@@ -12,6 +14,10 @@
     "preinstall": "node tools/check-yarn.js",
     "build": "node build.js",
     "version": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/damingerdai/ipjs.git"
   },
   "keywords": [
     "ip"
